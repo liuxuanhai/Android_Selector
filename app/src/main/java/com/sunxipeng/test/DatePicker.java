@@ -50,6 +50,7 @@ public class DatePicker extends Dialog {
 
         String array[] = new String[50];
 
+
         for(int i=0; i<array.length; i++){
 
             array[i] = String.valueOf(2011+i);
@@ -65,6 +66,10 @@ public class DatePicker extends Dialog {
         wheelViewAdapter.setItemTextResource(R.id.wheel_picker_item_content);
 
         wheelVerticalView.setViewAdapter(wheelViewAdapter);
+
+        //wheelVerticalView.setCyclic(true);
+
+        wheelVerticalView.setCurrentItem(2);
 
 
         /**
